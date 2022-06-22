@@ -1,0 +1,70 @@
+#contact {
+    min-height: 50rem;
+    width: 100%;
+    background: url("../img/background-bottom.png") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 18rem;
+    .contact_header {
+        @include text($white,4rem,700,center);
+        // margin-top: 11rem;
+        margin-bottom: 5rem;
+    }
+
+    .info_header {
+        @include text($white,2.2rem,500,left);
+        line-height: 4rem;
+    }
+
+    .info_content {
+        @include text($primary,1.4rem,400,left);
+    }
+
+    .bi {
+        font-size: 2rem;
+        color: $red;
+    }
+
+    #contact_form {
+        width: 100%;
+        input,textarea {
+            @include text($primary,1.4rem,400,left);
+            width: 100%;
+            padding: 2rem;
+            border: 1px solid $blue;
+            border-radius: 0.5rem;
+            outline: none;
+
+            &:focus {
+                border-color: #86b7fe;
+                // box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+            }
+        }
+
+        input {
+            height: 4rem;
+        }
+
+        .contact_btn {
+            border: 2px solid $red;
+            @include text($white,1.6rem,500,center);
+            background-color: $blue;
+            padding: 1rem 3.5rem;
+            border-radius: 5rem;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: #233a80;
+            }
+        }
+    }
+}
+
+footer {
+    @include text($primary,1.4rem,400,center);
+    padding-bottom: 3rem;
+
+    span {
+        font-weight: 500;
+    }
+}

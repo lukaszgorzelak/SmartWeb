@@ -1,0 +1,80 @@
+#offer {
+    // min-height: 50rem;
+    // width: 100%;
+    // background: url("../img/background-bottom.png") top center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // padding-top: 10rem;
+    // margin-top: 13rem;
+     .offer_header {
+        @include text($blue,4rem,700,center);
+        margin-top: 11rem;
+    }
+
+    .offer_content {
+        @include text($primary,1.8rem,400,center);
+        line-height: 150%;
+        margin-top: 3rem;
+        padding-bottom: 8rem;
+    }
+
+    .wrapper--offer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 8rem;
+        grid-gap: 2rem;
+        .offer_box {
+            width: 34rem;
+            height: 44rem;
+            padding: 0rem 4rem 4rem 5rem;
+            background-color: #0F1F4B;
+            // opacity: 0.7;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 3rem;
+            text-align: center;
+
+            .offer_box_title {
+                @include text($white,3rem,700,center);
+                padding-top: 5rem;
+                line-height: 35px;
+            }
+
+            .offer_list {
+                margin-top: 2rem;
+                margin-bottom: 3.7rem;
+
+                .offer_item {
+                    @include text($primary,1.8rem,400,left);
+                    line-height: 150%;
+                    list-style-type: disc;
+                }
+            }
+
+            .offer_price {
+                @include text($white,3rem,700,center);
+                line-height: 35px;
+                margin-top: 2.8rem;
+            }
+        }
+
+        .offer_box--white {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: $white;
+            .offer_box_title, .offer_price {
+               color: $blue;
+            }
+        }
+    }
+}
+
+hr {
+    color: #2A407C;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+
+    @media all and (max-width: map-get($brakepoints, sm)) {
+        padding-bottom: 1rem;
+    }
+}

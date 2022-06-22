@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-default;
+    // height: 500vh;
+  }
+  
+  a {
+    // color: $primary;
+    text-decoration: none;
+  }
+  
+
+
+img {
+  width: 80%;
+
+  @media all and (max-width: map-get($brakepoints, lg)) {
+    & {
+      width: 75%;
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width:map-get($brakepoints, lg)) {
+    & {
+      width: 50%;
+    }
+  }
+}
+
+ 
+  
+//   a:hover {
+//     color: lighten($primary, 10);
+//     text-decoration: none;
+//   }
+  
+//   h1, h2, h3, h4, h5, h6 {
+//     font-family: $font-primary;
+//   }
+
+  /*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+  #preloader {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    background: url("../img/favicon-96x96.png") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 2s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: $red;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  
+    i {
+      font-size: 28px;
+      color: #fff;
+      line-height: 0;
+    }
+  
+    // &:hover  {
+    //   background: lighten($primary, 8);
+    //   color: #fff;
+    // }
+  
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+  }
+  
+  .datepicker-dropdown {
+    padding: 20px !important;
+  }
+
+  .scrollNavbar {
+    padding: 0rem 0 0rem 0;
+    transition: all 0.3s ease;
+    background-color: $blue;
+  }
+  
+  .defaultNavbar {
+    // padding-top: 3rem;
+    // padding-bottom: 2rem;
+    padding: 1rem 0 1rem 0;
+    transition: all 0.3s ease;
+    // background-color: #172755;
+  }
+
+  
+  .rwdHeight {
+    // height: 115vh !important;
+    transition: height 0.4s ease;
+  }
+  
+  @media screen and ( min-width: map-get($brakepoints, xs)) and( max-width: 991px){
+      .navbar{
+        background-color: $blue;
+      }
+  }
+ 

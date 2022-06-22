@@ -1,0 +1,43 @@
+#about {
+  
+    .wrapper--box {
+        margin-top: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .about_header {
+        @include text($blue,4rem,700,center);
+        margin-bottom: 3rem;
+    }
+
+    .about_content {
+        @include text($primary,1.8rem,400,center);
+        line-height: 150%;
+    }
+    
+    .box {
+        width: 38rem;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 5rem 3rem 5rem 3rem;
+
+        .box_title {
+            margin-top: 2.6rem;
+            margin-bottom: 1.5rem;
+            @include text($blue,1.6rem,700,center);
+        }
+
+        .box_content {
+            @include text($primary,1.6rem,400,center);
+            line-height: 140%;
+        }
+
+        .box_img {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}

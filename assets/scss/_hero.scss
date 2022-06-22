@@ -1,0 +1,118 @@
+#hero {
+    min-height: 100vh;
+    width: 100%;
+    background: url("../img/background-top.png") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6rem;   
+
+    @media screen and ( min-height: 320px )and ( max-height: 495px ){
+      & {
+        padding-bottom: 55rem;
+      }
+    }
+
+    @media screen and ( min-width: map-get($brakepoints, xs)) and( max-width: 991px){
+        & {
+            // min-height: 90vh;
+            padding-top: 10rem;
+        }
+    }
+
+    @media screen and ( min-height: 600px )and ( max-height: 820px ){
+        & {
+          padding-bottom: 40rem;
+        }
+    }
+
+    // @media screen and ( min-width: map-get($brakepoints, md)){
+    //     & {
+    //         // min-height: 90vh;
+    //     }
+    // }
+
+    .hero__wrapper {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 70vh;
+        @media all and (max-width: map-get($brakepoints, lg)) {
+            & {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+              }
+         } 
+        
+        .hero__content {
+            order: 1;
+
+            @media all and (max-width: map-get($brakepoints, lg)) {
+                order: 2;
+            }
+           
+            .hero__wrapper-btn {
+
+                @media all and (max-width: map-get($brakepoints, lg)) {
+                    & {
+                        text-align: center;
+                    }
+                }
+
+                .hero__btn {
+                    padding: 1rem 8rem;
+                    background: $red;
+                    border-radius: 6.8rem;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    color: white;
+                    
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+
+        .hero__wrapper-img {
+            display: flex;
+            order: 2;
+            justify-content: flex-end;
+
+            @media all and (max-width: map-get($brakepoints, lg)) {
+                & {
+                    padding: 2rem 0 2rem 0;
+                    order: 1;
+                    justify-content: center;
+                  }
+             } 
+        }
+    }
+
+    .hero__title {
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 120%;
+        margin-bottom: 1.5rem;
+
+        @media all and (max-width: map-get($brakepoints, lg)) {
+            & {
+                font-size: 2.8rem;
+              }
+         } 
+    }
+
+    .hero__subtitle {
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $primary;
+        margin-bottom: 5rem;
+        line-height: 150%;
+    }
+
+    .hero__img {
+        border-radius: 2rem;
+    }
+}

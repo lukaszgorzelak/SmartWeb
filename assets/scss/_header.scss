@@ -1,0 +1,25 @@
+#header {
+    // background-color: #172755;
+    // min-height: 100vh;
+    // width: 100%;
+    // background: url("../img/background-top.png")top center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    .navbar-brand {
+        span {
+            font-size: 2rem;
+        }
+    }
+    
+    .nav-item {
+        a {
+            color: $primary;
+            font-size: 1.6rem;
+            &:hover {
+                border-bottom: 2px solid $red;
+            }
+        }
+    }
+}
+
