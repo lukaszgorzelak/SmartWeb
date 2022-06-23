@@ -99,7 +99,7 @@ img {
 
 #preloader:before {
   content: "";
-  background: url("../img/favicon-96x96.png") center center;
+  background: url("../img/spider_64.png") center center;
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -432,7 +432,7 @@ img {
 
 #offer .wrapper--offer .offer_box {
   width: 34rem;
-  height: 44rem;
+  height: 50rem;
   padding: 0rem 4rem 4rem 5rem;
   background-color: #0F1F4B;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

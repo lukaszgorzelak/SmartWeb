@@ -1,11 +1,4 @@
 #offer {
-    // min-height: 50rem;
-    // width: 100%;
-    // background: url("../img/background-bottom.png") top center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // padding-top: 10rem;
-    // margin-top: 13rem;
      .offer_header {
         @include text($blue,4rem,700,center);
         margin-top: 11rem;
@@ -26,10 +19,9 @@
         grid-gap: 2rem;
         .offer_box {
             width: 34rem;
-            height: 44rem;
+            height: 50rem;
             padding: 0rem 4rem 4rem 5rem;
             background-color: #0F1F4B;
-            // opacity: 0.7;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             border-radius: 3rem;
             text-align: center;
