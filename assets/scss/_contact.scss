@@ -25,7 +25,7 @@
         color: $red;
     }
 
-    #contact_form {
+    #contactform {
         width: 100%;
         input,textarea {
             @include text($primary,1.4rem,400,left);

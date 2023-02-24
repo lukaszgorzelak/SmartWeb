@@ -626,11 +626,11 @@ hr {
   color: #EF2A82;
 }
 
-#contact #contact_form {
+#contact #contactform {
   width: 100%;
 }
 
-#contact #contact_form input, #contact #contact_form textarea {
+#contact #contactform input, #contact #contactform textarea {
   color: #8794BA;
   font-size: 1.4rem;
   font-weight: 400;
@@ -642,15 +642,15 @@ hr {
   outline: none;
 }
 
-#contact #contact_form input:focus, #contact #contact_form textarea:focus {
+#contact #contactform input:focus, #contact #contactform textarea:focus {
   border-color: #86b7fe;
 }
 
-#contact #contact_form input {
+#contact #contactform input {
   height: 4rem;
 }
 
-#contact #contact_form .contact_btn {
+#contact #contactform .contact_btn {
   border: 2px solid #EF2A82;
   color: #fff;
   font-size: 1.6rem;
@@ -663,7 +663,7 @@ hr {
   transition: 0.4s;
 }
 
-#contact #contact_form .contact_btn:hover {
+#contact #contactform .contact_btn:hover {
   background-color: #233a80;
 }
 
